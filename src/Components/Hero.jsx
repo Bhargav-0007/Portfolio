@@ -33,16 +33,17 @@ Full Stack Java Developer specializing in Spring Boot, Microservices, and React,
                 rel="noopener noreferrer"
                 className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
             >
-  LinkedIn
-</a>
-
-            <a
-              href="/resume.pdf"
-              className="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300"
-            >
-              Resume
+            LinkedIn
             </a>
 
+            <a
+                href="/resume.docx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300"
+            >
+            Resume
+            </a>
           </div>
         </div>
 
