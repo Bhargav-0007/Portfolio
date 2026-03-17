@@ -28,11 +28,11 @@ Full Stack Java Developer specializing in Spring Boot, Microservices, and React,
             </a>
 
             <a
-  href="https://www.linkedin.com/in/your-profile"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
->
+                href="https://www.linkedin.com/in//venu-bhargav-pavuluri-aabb6634b"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
+            >
   LinkedIn
 </a>
 
