@@ -10,7 +10,7 @@ function Contact() {
 
       <div className="flex flex-col gap-4 items-center">
 
-        <p>Email: your.email@example.com</p>
+        <p>Email: bhargavpavuluri13@gmail.com</p>
 
         <div className="flex gap-6">
           <a href="#" className="text-blue-500">GitHub</a>
