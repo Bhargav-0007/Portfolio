@@ -29,7 +29,7 @@ function Hero() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-black text-white px-8 pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center bg-black text-white px-8 pt-20 overflow-hidden">
 
       {/* Background Glows */}
       <div className="absolute z-0 w-[500px] h-[500px] bg-blue-500 opacity-20 blur-3xl rounded-full top-[-100px] left-[-100px]"></div>
