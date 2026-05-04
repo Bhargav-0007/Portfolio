@@ -70,12 +70,6 @@ function Navbar() {
             </a>
           ))}
 
-          <a
-            href="#contact"
-            className="ml-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors duration-300"
-          >
-            Hire Me
-          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -121,13 +115,6 @@ function Navbar() {
               {label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setIsOpen(false)}
-            className="mt-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2 rounded-lg text-center transition-colors duration-300"
-          >
-            Hire Me
-          </a>
         </div>
       </div>
     </nav>
