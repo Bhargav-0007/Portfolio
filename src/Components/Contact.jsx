@@ -99,7 +99,7 @@ function Contact() {
 
             <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
               <p className="text-gray-400 text-sm leading-relaxed">
-                Based in <span className="text-white font-semibold">Irving, TX</span>. Available for
+                Based in <span className="text-white font-semibold">Atlanta, GA</span>. Available for
                 on-site, hybrid, or remote roles. Currently open to{" "}
                 <span className="text-blue-400 font-semibold">Full Stack Java Developer</span>{" "}
                 positions.
