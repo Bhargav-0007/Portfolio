@@ -1,4 +1,19 @@
+import { useState } from "react";
+
 function Contact() {
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const body = `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`;
+    const mailto = `mailto:bhargavpavuluri13@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 4000);
+  };
   const contactInfo = [
     {
       icon: (
@@ -96,18 +111,16 @@ function Contact() {
           <div>
             <h3 className="text-2xl font-bold mb-8 text-blue-400">Send a Message</h3>
 
-            <form
-              action={`mailto:bhargavpavuluri13@gmail.com`}
-              method="post"
-              encType="text/plain"
-              className="space-y-5"
-            >
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm text-gray-400 mb-2">Your Name</label>
                   <input
                     type="text"
                     name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
                     placeholder="John Doe"
                     className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
                   />
@@ -117,6 +130,9 @@ function Contact() {
                   <input
                     type="email"
                     name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
                     placeholder="john@example.com"
                     className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
                   />
@@ -128,6 +144,9 @@ function Contact() {
                 <input
                   type="text"
                   name="subject"
+                  value={form.subject}
+                  onChange={handleChange}
+                  required
                   placeholder="Job Opportunity / Collaboration"
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
                 />
@@ -138,6 +157,9 @@ function Contact() {
                 <textarea
                   name="message"
                   rows={5}
+                  value={form.message}
+                  onChange={handleChange}
+                  required
                   placeholder="Tell me about the opportunity or project..."
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
                 />
@@ -149,6 +171,12 @@ function Contact() {
               >
                 Send Message
               </button>
+
+              {submitted && (
+                <p className="text-green-400 text-sm text-center">
+                  Your email client should have opened — thank you for reaching out!
+                </p>
+              )}
             </form>
           </div>
 
