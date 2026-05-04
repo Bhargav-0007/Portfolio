@@ -2,17 +2,28 @@ import { useState } from "react";
 
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const body = `Name: ${form.name}\nEmail: ${form.email}\n\n${form.message}`;
-    const mailto = `mailto:bhargavpavuluri13@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    setStatus("sending");
+    try {
+      const res = await fetch("https://formspree.io/f/xlgzjklg", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setForm({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
   const contactInfo = [
     {
@@ -167,14 +178,20 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 py-3 rounded-lg font-semibold text-white"
+                disabled={status === "sending"}
+                className="w-full bg-blue-600 hover:bg-blue-700 disabled:opacity-60 disabled:cursor-not-allowed transition-colors duration-300 py-3 rounded-lg font-semibold text-white"
               >
-                Send Message
+                {status === "sending" ? "Sending…" : "Send Message"}
               </button>
 
-              {submitted && (
+              {status === "success" && (
                 <p className="text-green-400 text-sm text-center">
-                  Your email client should have opened — thank you for reaching out!
+                  Message sent! I'll get back to you soon.
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-red-400 text-sm text-center">
+                  Something went wrong. Please try again or email me directly.
                 </p>
               )}
             </form>
