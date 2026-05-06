@@ -3,7 +3,7 @@ const projects = [
     title: "Library Management System",
     desc: "Full-stack application for managing books, members, and borrowing operations. Features role-based access, book search, issue/return tracking, and automated fine calculation.",
     tags: ["Java", "Spring Boot", "React.js", "MySQL", "JWT", "REST APIs"],
-    github: "https://github.com/Bhargav-0007",
+    github: "https://github.com/Bhargav-0007/library_management_system",
   },
   {
     title: "E-Commerce Platform",
