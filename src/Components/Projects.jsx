@@ -1,8 +1,8 @@
 const projects = [
   {
     title: "Library Management System",
-    desc: "Backend REST API for managing books, members, and borrowing operations. Features role-based access control, book search, issue/return tracking, and automated fine calculation.",
-    tags: ["Java", "Spring Boot", "MySQL", "JWT", "REST APIs"],
+    desc: "Backend REST API for managing books, authors, members, and borrowing operations. Features 3-tier role-based access control (Admin, Librarian, Member), advanced book search, loan tracking with automated fine calculation, and Swagger API documentation.",
+    tags: ["Java", "Spring Boot", "MySQL", "JWT", "REST APIs", "Swagger"],
     github: "https://github.com/Bhargav-0007/library_management_system",
   },
   {
