@@ -1,14 +1,14 @@
 const projects = [
   {
     title: "Library Management System",
-    desc: "Full-stack application for managing books, members, and borrowing operations. Features role-based access, book search, issue/return tracking, and automated fine calculation.",
-    tags: ["Java", "Spring Boot", "React.js", "MySQL", "JWT", "REST APIs"],
+    desc: "Backend REST API for managing books, members, and borrowing operations. Features role-based access control, book search, issue/return tracking, and automated fine calculation.",
+    tags: ["Java", "Spring Boot", "MySQL", "JWT", "REST APIs"],
     github: "https://github.com/Bhargav-0007/library_management_system",
   },
   {
     title: "E-Commerce Platform",
-    desc: "Modern e-commerce web app with a responsive home page, category browsing, product catalog with search and filtering, shopping cart, and user authentication. Built with React and TypeScript using Vite for fast development.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "React Router"],
+    desc: "Full-stack e-commerce app with a React/TypeScript frontend and a Node.js + Express backend. Features product catalog with search and filtering, shopping cart, user authentication, and a complete checkout workflow.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "Node.js", "Express"],
     github: "https://github.com/Bhargav-0007/ecommerce-app",
   },
   {
