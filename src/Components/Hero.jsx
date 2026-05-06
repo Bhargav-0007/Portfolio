@@ -12,10 +12,6 @@ function Hero() {
         {/* LEFT */}
         <div className="md:w-1/2 text-center md:text-left">
 
-          <p className="text-blue-400 font-semibold tracking-widest uppercase text-sm mb-4">
-            Welcome to my portfolio
-          </p>
-
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
             Hi, I'm <span className="text-blue-500">Bhargav</span>
           </h1>
