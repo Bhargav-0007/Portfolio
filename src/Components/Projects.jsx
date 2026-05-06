@@ -7,8 +7,8 @@ const projects = [
   },
   {
     title: "E-Commerce Platform",
-    desc: "Full-stack e-commerce app with a React/TypeScript frontend and a Node.js + Express backend. Features product catalog with search and filtering, shopping cart, user authentication, and a complete checkout workflow.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "Node.js", "Express"],
+    desc: "Full-stack e-commerce app with a React/TypeScript frontend and a Java Spring Boot backend. Features product catalog with search and filtering, shopping cart, user authentication, and a complete checkout workflow.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "Java", "Spring Boot"],
     github: "https://github.com/Bhargav-0007/ecommerce-app",
   },
   {
