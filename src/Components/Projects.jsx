@@ -7,9 +7,9 @@ const projects = [
   },
   {
     title: "E-Commerce Platform",
-    desc: "Scalable e-commerce backend with product catalog, order management, and payment integration. Event-driven architecture using Kafka for inventory and order sync.",
-    tags: ["Java", "Spring Boot", "React.js", "MongoDB", "Redis", "Kafka"],
-    github: "https://github.com/Bhargav-0007",
+    desc: "Modern e-commerce web app with a responsive home page, category browsing, product catalog with search and filtering, shopping cart, and user authentication. Built with React and TypeScript using Vite for fast development.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "React Router"],
+    github: "https://github.com/Bhargav-0007/ecommerce-app",
   },
   {
     title: "Job Application Tracker",
