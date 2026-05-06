@@ -49,7 +49,7 @@ function Navbar() {
           href="#"
           className="text-xl font-extrabold tracking-tight text-white hover:text-blue-400 transition-colors duration-300"
         >
-          Bhargav<span className="text-blue-500">.</span>
+          Bhargav<span className="text-blue-500"></span>
         </a>
 
         {/* Desktop Links */}
