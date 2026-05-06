@@ -1,33 +1,4 @@
-import { useState, useEffect } from "react";
-
 function Hero() {
-  const roles = [
-    "Full Stack Java Developer",
-    "Spring Boot Specialist",
-    "React.js Engineer",
-    "Cloud-Native Architect",
-  ];
-  const [roleIndex, setRoleIndex] = useState(0);
-  const [visible, setVisible] = useState(true);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setVisible(false);
-      setTimeout(() => {
-        setRoleIndex((prev) => (prev + 1) % roles.length);
-        setVisible(true);
-      }, 400);
-    }, 2800);
-    return () => clearInterval(interval);
-  }, []);
-
-  const stats = [
-    { value: "4+", label: "Years Exp." },
-    { value: "500K+", label: "Req / Day" },
-    { value: "99.9%", label: "Uptime" },
-    { value: "12+", label: "Microservices" },
-  ];
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center bg-black text-white px-8 pt-20 overflow-hidden">
 
@@ -49,33 +20,13 @@ function Hero() {
             Hi, I'm <span className="text-blue-500">Bhargav</span>
           </h1>
 
-          {/* Animated Role */}
-          <div className="h-10 mb-6 overflow-hidden">
-            <p
-              className="text-2xl md:text-3xl font-semibold text-gray-300"
-              style={{ opacity: visible ? 1 : 0, transition: "opacity 0.4s ease" }}
-            >
-              {roles[roleIndex]}
-            </p>
-          </div>
-
-          <p className="text-lg text-gray-400 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
-            Building enterprise-grade microservices and modern React frontends. Currently at{" "}
-            <span className="text-white font-semibold">Wells Fargo</span>, architecting systems
-            handling{" "}
-            <span className="text-blue-400 font-semibold">500K+ requests/day</span> at{" "}
-            <span className="text-blue-400 font-semibold">99.9% uptime</span>.
+          <p className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
+            Full Stack Java Developer
           </p>
 
-          {/* Inline Stats */}
-          <div className="flex gap-8 mb-10 justify-center md:justify-start flex-wrap">
-            {stats.map((s, i) => (
-              <div key={i} className="text-center">
-                <div className="text-2xl font-extrabold text-blue-400">{s.value}</div>
-                <div className="text-xs text-gray-500 uppercase tracking-wider mt-0.5">{s.label}</div>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-lg mx-auto md:mx-0">
+            4+ years of experience building scalable enterprise applications using Spring Boot, Microservices, and React.js. Open to full-time opportunities.
+          </p>
 
           {/* CTA Buttons */}
           <div className="flex gap-4 justify-center md:justify-start flex-wrap">
@@ -121,12 +72,7 @@ function Hero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500">
         <span className="text-xs uppercase tracking-widest">Scroll</span>
-        <svg
-          className="w-5 h-5 animate-bounce"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg className="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </div>

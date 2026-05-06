@@ -32,6 +32,7 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -99,13 +100,6 @@ function Footer() {
 
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800 px-8 py-4">
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-gray-500 text-sm">
-          <p>© {new Date().getFullYear()} Bhargav Pavuluri. All rights reserved.</p>
-          <p>Built with React &amp; Tailwind CSS</p>
-        </div>
-      </div>
 
     </footer>
   );
