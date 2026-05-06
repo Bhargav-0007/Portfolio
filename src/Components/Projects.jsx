@@ -32,7 +32,7 @@ function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, i) => (
             <div
               key={i}
