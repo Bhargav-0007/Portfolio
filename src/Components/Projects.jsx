@@ -11,12 +11,12 @@ const projects = [
     tags: ["React", "TypeScript", "Tailwind CSS", "Vite", "Zustand", "Java", "Spring Boot"],
     github: "https://github.com/Bhargav-0007/ecommerce-app",
   },
-  {
+  /*{
     title: "Job Application Tracker",
     desc: "Full-stack app to track job applications, interview stages, and follow-ups. Includes dashboard analytics, status filters, and email reminders.",
     tags: ["Spring Boot", "React.js", "PostgreSQL", "Docker", "REST APIs"],
     github: "https://github.com/Bhargav-0007",
-  },
+  },*/
 ];
 
 function Projects() {
