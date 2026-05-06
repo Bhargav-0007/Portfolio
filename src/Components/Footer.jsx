@@ -47,7 +47,7 @@ function Footer() {
         {/* Brand */}
         <div>
           <a href="#home" className="text-2xl font-extrabold tracking-tight hover:text-blue-400 transition-colors">
-            Bhargav<span className="text-blue-500">.</span>
+            Bhargav<span className="text-blue-500"></span>
           </a>
           <p className="text-gray-400 text-sm mt-3 leading-relaxed max-w-xs">
             Java Full Stack Developer specializing in Spring Boot, Microservices, and React. Building scalable, secure, high-performance systems.
